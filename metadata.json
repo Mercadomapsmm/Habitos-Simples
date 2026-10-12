@@ -1,0 +1,6 @@
+{
+  "name": "Hábitos Simples - Lembretes do Dia a Dia",
+  "description": "App gratuito, leve e offline para manter 4 hábitos essenciais: beber água, se exercitar, dormir bem e tomar remédios.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

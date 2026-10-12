@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0284c7" />
+      <stop offset="50%" stop-color="#0ea5e9" />
+      <stop offset="100%" stop-color="#10b981" />
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#0f172a" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+
+  <!-- Background with rounded corners -->
+  <rect width="512" height="512" rx="112" fill="url(#bgGrad)"/>
+
+  <!-- Inner glowing circle -->
+  <circle cx="256" cy="256" r="210" fill="#ffffff" fill-opacity="0.12"/>
+
+  <!-- 4 Quadrants representing the 4 Habits -->
+  <!-- Top Left: Water Drop (Water) -->
+  <g transform="translate(130, 130)" filter="url(#shadow)">
+    <circle cx="25" cy="25" r="54" fill="#ffffff"/>
+    <path d="M25 0 C25 0 2 28 2 40 A23 23 0 0 0 48 40 C48 28 25 0 25 0 Z" fill="#0284c7"/>
+    <circle cx="33" cy="35" r="4" fill="#bae6fd" opacity="0.8"/>
+  </g>
+
+  <!-- Top Right: Running / Energy (Exercise) -->
+  <g transform="translate(330, 130)" filter="url(#shadow)">
+    <circle cx="25" cy="25" r="54" fill="#ffffff"/>
+    <!-- Runner / Energy icon -->
+    <path d="M25 6 A7 7 0 1 1 25 20 A7 7 0 1 1 25 6 Z" fill="#10b981"/>
+    <path d="M14 26 L23 22 L29 27 L39 23 M23 29 L16 38 M29 27 L33 39 L43 45" stroke="#10b981" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  </g>
+
+  <!-- Bottom Left: Moon & Stars (Sleep) -->
+  <g transform="translate(130, 330)" filter="url(#shadow)">
+    <circle cx="25" cy="25" r="54" fill="#ffffff"/>
+    <path d="M35 12 A26 26 0 1 1 18 39 A20 20 0 0 0 35 12 Z" fill="#6366f1"/>
+    <circle cx="36" cy="18" r="2.5" fill="#facc15"/>
+    <circle cx="16" cy="15" r="1.5" fill="#facc15"/>
+  </g>
+
+  <!-- Bottom Right: Pill / Capsule (Medicine) -->
+  <g transform="translate(330, 330)" filter="url(#shadow)">
+    <circle cx="25" cy="25" r="54" fill="#ffffff"/>
+    <g transform="rotate(-45 25 25)">
+      <!-- Pill capsule -->
+      <path d="M13 14 A12 12 0 0 1 37 14 L37 25 L13 25 Z" fill="#f43f5e"/>
+      <path d="M13 25 L37 25 L37 36 A12 12 0 0 1 13 36 Z" fill="#facc15"/>
+      <line x1="13" y1="25" x2="37" y2="25" stroke="#ffffff" stroke-width="2.5"/>
+    </g>
+  </g>
+
+  <!-- Center Heart/Check Badge -->
+  <circle cx="256" cy="256" r="34" fill="#ffffff" filter="url(#shadow)"/>
+  <path d="M246 256 L253 263 L268 248" fill="none" stroke="#059669" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
